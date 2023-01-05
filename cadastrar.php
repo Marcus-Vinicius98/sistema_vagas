@@ -4,10 +4,17 @@
 
         use \App\Entity\Vaga;
 
-        if (isset($_POST['titulo'],$_POST['descricao'],$_POST['ativo'])) {
-            $obVaga = new Vaga; 
-        }
+        //VALIDAÇÃO DO POST 
+       if (isset($_POST['titulo'],$_POST['descricao'],$_POST['ativo'])) {
+          $obVaga = new Vaga;
 
+          $obVaga->setTitulo = $_POST['titulo'];
+           $obVaga->Setdescricao = $_POST['descricao'];
+            $obVaga->setAtivo = $_POST['ativo'];
+
+            $obVaga->cadastrar();
+            
+       }
 
 
         include __DIR__. '/includes/header.php';

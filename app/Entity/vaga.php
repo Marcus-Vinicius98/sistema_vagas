@@ -4,11 +4,32 @@ namespace App\Entity;
 
 class Vaga
 {
+    /**
+     *Identificador único da vaga
+     * @var integer
+     */
     private $id;
+    /**
+     *Titulo da vaga
+     * @var String
+     */
     private $titulo;
+    /**
+     *Descrição da vaga(pode conter html)
+     * @var String
+     */
     private $descricao;
+    /**
+     *Define se a vaga está ativa
+     * @var String(s/n)
+     */
     private $ativo;
+    /**
+     *Data de publicação da vaga
+     * @var String
+     */
     private $data;
+
 
     public function setId($id)
     {
