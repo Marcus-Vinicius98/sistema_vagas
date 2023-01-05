@@ -1,3 +1,9 @@
+      
+      
+      
+     
+      <!--fechamento da div do container-->
+        </div>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
