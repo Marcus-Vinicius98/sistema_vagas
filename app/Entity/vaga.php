@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Entity;
+  
+   use \App\Db\Database;
 
 class Vaga
 {
@@ -70,6 +72,19 @@ class Vaga
     public function getData()
     {
         return $this->data;
+    }
+
+
+    /**
+     * Método resposável por cadastrar uma nova vaga no banco
+     * @return boolean
+     */
+    public function cadastrar(){
+        //Definir a data
+        $this->data = date('Y-m-d H:i:s');
+        //Inserir a vaga no banco
+
+
     }
 
 
